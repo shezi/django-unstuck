@@ -23,7 +23,7 @@ Here are the things we have ideas for:
  * [Background tasks and long-running processes and Caching](docs/background-tasks.md) (WIP)
  * [Templates: Placement, folders, blocks and inheritance and namespaces](docs/templates.md) (WIP)
  * [Should you do i18n and l10n right away?](docs/i18n.md)
- * [When and how to start caching (memcached, redis etc.)](docs/caching.md) (WIP=)
+ * [When and how to start caching (memcached, redis etc.)](docs/caching.md) (WIP)
  * [Where does your code go: models, views or managers or somewhere else?](docs/where-does-the-code-go.md) (WIP)
  * [When to use Middlewares and context processors and what are they?](docs/middleware.md) (WIP)
  * [How to secure access: security middlewares or login_required (white vs black list)](docs/secure-access.md) (WIP)
