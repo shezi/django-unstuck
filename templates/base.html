@@ -1,0 +1,58 @@
+{% spaceless %}
+{% load static %}{% load i18n %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/ico" href="{% static "images/favicon.ico" %}"/>
+    <title>{% block title %}{% endblock title %}Unstuck!</title>
+    <link rel="stylesheet" href="{% static "foundation/foundation.min.css" %}">
+    {% block extra_css %}{% endblock extra_css %}
+    {# <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'> #}
+  </head>
+  <body>
+
+    <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas>
+      <div class="grid-y grid-padding-x" style="height: 100%;">
+        <br>
+        {% include 'snippets/base_menu.html' %}
+      </div>
+    </div>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="title-bar hide-for-large">
+        <div class="title-bar-left">
+          <button class="menu-icon" type="button" data-toggle="my-info"></button>
+          <span class="title-bar-title">Tuque!</span>
+        </div>
+
+        {% if messages %}
+          <div class="grid-container">
+            {% for message in messages %}
+              <div class="callout {{ message.tags }}">
+                <p>{{ message }}</p>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x small-up-1 medium-up-1 large-up-1">
+            <div class="cell">
+              {% block content %}
+              {% endblock content %}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="{% static "foundation/jquery-2.1.4.min.js" %}"></script>
+    <script src="{% static "foundation/foundation.min.js" %}" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script>$(document).foundation();</script>
+  </body>
+</html>
+{% endspaceless %}
