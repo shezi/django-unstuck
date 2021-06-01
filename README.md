@@ -21,7 +21,7 @@ Here are the things we have ideas for:
  * [Username vs email address](docs/username.md) (WIP)
  * [Registration in general](docs/registration.md) (WIP)
  * [Background tasks and long-running processes and Caching](docs/background-tasks.md) (WIP)
- * [Templates: Placement, folders, blocks and inheritance and namespaces](docs/templates.md) (WIP)
+ * [Templates: Placement, folders, blocks and inheritance and namespaces](docs/templates.md)
  * [Should you do i18n and l10n right away?](docs/i18n.md)
  * [When and how to start caching (memcached, redis etc.)](docs/caching.md) (WIP)
  * [Where does your code go: models, views or managers or somewhere else?](docs/where-does-the-code-go.md) (WIP)
