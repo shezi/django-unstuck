@@ -1,4 +1,4 @@
-"""demoproject URL Configuration
+"""unstuck URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -16,9 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from demoapi import views
-
 urlpatterns = [
-    path("api/demo/", views.demo_list),
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
 ]

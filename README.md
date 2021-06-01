@@ -30,3 +30,8 @@ Here are the things we have ideas for:
  * [How to create files and store them in file models](docs/files.md) (WIP)
  * [What to do about image scaling and thumbnailing (and hosting)?](docs/images.md) (WIP)
  * [How to serve content: coded pages, flatpages or Wagtail?](docs/flatpages.md) (WIP)
+
+
+# The project itself
+
+This repository also contains a project called "Django Unstuck" that adheres to the guidelines in the documentation.
