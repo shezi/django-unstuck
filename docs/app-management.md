@@ -20,7 +20,7 @@ Organize your project such that:
 
 We're going to change the project structure in three steps: configuration, apps and URLs
 
-## Step 1: configuration
+## <a id="configuration"></a> Step 1: configuration
 
 We want to separate the configuration into a directory that contains all of the configuration and is properly named. The
 final layout will look like this:
@@ -88,7 +88,7 @@ AUTH_PASSWORD_VALIDATORS = []
 ```
 This makes it easier in development to have simple passwords.
 
-## Step 2: apps
+## <a id="apps"></a> Step 2: apps
 
 We're going to put all the apps in a directory. This makes it easier to find them, they will not be mixed in with other
 things (like static files, documentation, tools/scripts, etc).
@@ -126,7 +126,7 @@ Finally, move all your apps into the `apps/` directory. No further changes are n
 You can now name your main app the same as your project.
 
 
-## Step 3: urlpatterns
+## <a id="urlpatterns"></a> Step 3: urlpatterns
 
 Each app gets urlpatterns and gets added to the project URLs right away. That way, you can make sure you easily add new
 URLs to each app, and each app has its own URLs.
@@ -157,7 +157,29 @@ Do this, whenever you start an app, and do it for every app! After some time, th
 way, we make sure all URLs are defined in their respective apps, and each app can have URLs without further
 configuration.
 
-## Step 4: Success!
+## <a id="structure"></a> Step 4: Success!
+
+Our final structure looks like this:
+
+```
+project_root/
+  apps/
+    your_app/
+    ...
+  config/
+    settings/
+      base.py
+      development.py
+      production.py
+      test.py
+    asgi.py
+    wsgi.py
+    urls.py
+  static/
+    ...
+  templates/
+    ...
+```
 
 We have achieved our goals!
 
@@ -165,5 +187,6 @@ We have achieved our goals!
 * what belongs together, stays together
 * code/URLs are easily found
 * settings are flexible
+
 
 Hooray!
