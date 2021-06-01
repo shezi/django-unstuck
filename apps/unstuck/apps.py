@@ -2,5 +2,5 @@ from django.apps import AppConfig
 
 
 class UnstuckConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'unstuck'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "unstuck"
